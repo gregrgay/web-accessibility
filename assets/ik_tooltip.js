@@ -87,6 +87,15 @@
 					}
 										
 				})
+            .on('keyup', function(event) {         
+                if(event.keyCode == '27') { // hide when escape key is pressed
+                    $tooltip
+                        .attr({
+                            'aria-hidden': 'true'
+                        })
+                        .removeClass('visible');
+                }              
+            });
 		}
 	};
 	
