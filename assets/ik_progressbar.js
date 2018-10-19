@@ -58,6 +58,7 @@
                 .addClass('ik_readersonly') // hide element from visual display
                 .attr({
                 'id': id + '_instructions',
+                'aria-live': 'assertive',
                 'aria-hidden': 'true'  // hide element from screen readers to prevent it from being read twice
         })
         .appendTo(this.element);
