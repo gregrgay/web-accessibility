@@ -66,10 +66,10 @@
 					'id': id,
                     'tabindex': 0,
                     'role': 'slider', 
+                    'aria-describedby': id + '_instructions',
                     'aria-valuemin': plugin.options.minValue, 
                     'aria-valuemax': plugin.options.maxValue, 
-                    'aria-valuenow': plugin.options.minValue, 
-                    'aria-describedby': id + '_instructions' 
+                    'aria-valuenow': plugin.options.minValue
 				})
 				.addClass('ik_knob')
                 .on('keydown', {'plugin': plugin}, plugin.onKeyDown)
@@ -80,7 +80,8 @@
 				
             $('<div/>') // add instructions for screen reader users
             .attr({
-            'id': id + '_instructions'
+            'id': id + '_instructions',
+            'tabindex': -1
             })
             .text(this.options.instructions)
             .addClass('ik_readersonly')
