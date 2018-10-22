@@ -103,7 +103,7 @@
 			.removeClass('selected')
             .attr({
                 'aria-selected': false,
-                'tabindex': -1 // remove them from tab order
+                'tabindex': -1 
             })
 			.blur();
 		
