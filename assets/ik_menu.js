@@ -201,7 +201,7 @@
 		plugin.collapseAll(plugin);
 	
 		if ($elem.has('a').length) {
-			alert('Menu item ' + $elem.find('>a').text() + ' selected');
+			//alert('Menu item ' + $elem.find('>a').text() + ' selected');
 		}
 		
 	};
