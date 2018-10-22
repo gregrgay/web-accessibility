@@ -2,7 +2,7 @@
 	
 	var pluginName = 'ik_carousel',
 		defaults = { // default settings
-            'instructions': 'Carousel widget. Use left and reight arrows to navigate between slides.',
+            'instructions': 'Carousel widget. Use left and right arrows to navigate between slides.',
 			'animationSpeed' : 3000
 		};
 	 
